@@ -47,10 +47,34 @@ Object.freeze
 
 ## console-polyfill
 
+React 中使用了 `console.*`，故需要 `console-polyfill` 来使旧浏览器不报错。
 
+`console-polyfill` 提供了 `component`, `bower` 或者 `npm` 的方式引入。
 
 ## HTML5 shiv (optional)
 
+如果你用到了一些 HTML5 的标签，比如 `<section>`, `<article>`, `<nav>`, `<header>`, `<footer>` 等，那么需要引入 HTML5 shiv。
+
+由于需要在文档解析前引入，故最好将它以 `script` 标签的形式插入到 `head` 中，注意最好添加对 IE 的识别，只在小于 IE9 的浏览器中引用即可：
+
+```html
+<!--[if lt IE 9]>
+  <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+```
+
+HTML5 shiv 支持 bower 的方式安装。
+
 ## Respond.js (optional)
 
-## 注意事项
+如果你用到了 `min/max-width CSS3 Media Queries`，那么需要引用 `Respond.js`。
+
+由于 Bootstrap 使用了这个，所以依赖于 Bootstrap 的项目需要引用 `Respond.js`。
+
+`bower` 安装后，直接在 `head` 中插入即可。
+
+## Trouble Shooting
+
+### Respond.js 不支持跨域
+
+由于 Respond.js 使用了 Ajax 去请求你的 css 文件，所以需要针对跨域的 Respond.js 做一些额外的适配。
