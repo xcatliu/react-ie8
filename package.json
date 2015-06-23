@@ -4,6 +4,7 @@
   "description": "Make your React application available in ie8",
   "main": "index.js",
   "scripts": {
+    "start": "node worker.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/xcatliu/react-ie8/issues"
   },
-  "homepage": "https://github.com/xcatliu/react-ie8"
+  "homepage": "https://github.com/xcatliu/react-ie8",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "node-static": "^0.7.6"
+  }
 }
