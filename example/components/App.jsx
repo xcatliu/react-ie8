@@ -1,7 +1,12 @@
-var React = require('react');
+import React from 'react';
+import Readme from './Readme.jsx';
 
-module.exports = React.createClass({
-  render: function() {
-    return <h1>Hello World</h1>;
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <Readme/>
+      </div>
+    );
   }
-});
+};

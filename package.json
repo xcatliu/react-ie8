@@ -4,8 +4,16 @@
   "description": "Make your React application available in ie8",
   "main": "index.js",
   "scripts": {
-    "start": "node worker.js",
+    "build": "browserify example/index.jsx -o example/bundle.js",
+    "start": "beefy example/index.jsx:bundle.js 8000 --bundler ./node_modules/.bin/browserify --cwd example --live --open -- --debug",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "brfs",
+      "envify"
+    ]
   },
   "repository": {
     "type": "git",
@@ -23,10 +31,14 @@
   },
   "homepage": "https://github.com/xcatliu/react-ie8",
   "dependencies": {
+    "marked": "^0.3.3",
     "react": "^0.13.3"
   },
   "devDependencies": {
+    "babelify": "^6.1.2",
+    "beefy": "^2.1.5",
+    "brfs": "^1.4.0",
     "browserify": "^10.2.4",
-    "node-static": "^0.7.6"
+    "envify": "^3.4.0"
   }
 }
