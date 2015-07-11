@@ -78,3 +78,7 @@ HTML5 shiv 支持 bower 的方式安装。
 ### Respond.js 不支持跨域
 
 由于 Respond.js 使用了 Ajax 去请求你的 css 文件，所以需要针对跨域的 Respond.js 做一些额外的适配。
+
+### Promise undefined
+
+IE8 下没有 Promise，建议使用 [es6-promise](https://github.com/jakearchibald/es6-promise)。
