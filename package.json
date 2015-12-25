@@ -35,10 +35,14 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
     "babelify": "^6.1.2",
     "beefy": "^2.1.5",
     "brfs": "^1.4.0",
     "browserify": "^10.2.4",
-    "envify": "^3.4.0"
+    "envify": "^3.4.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-react": "^3.12.0"
   }
 }
