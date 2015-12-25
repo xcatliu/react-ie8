@@ -30,8 +30,7 @@
   "homepage": "https://github.com/xcatliu/react-ie8",
   "dependencies": {
     "console-polyfill": "^0.2.2",
-    "es5-shim": "^4.4.1",
-    "html5shiv": "^3.7.3"
+    "es5-shim": "^4.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
