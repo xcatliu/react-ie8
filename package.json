@@ -1,19 +1,11 @@
 {
   "name": "react-ie8",
   "version": "0.0.0",
-  "description": "Make your React application available in ie8",
+  "description": "Make your React app work in IE8",
   "main": "index.js",
   "scripts": {
-    "build": "browserify example/index.jsx -o example/bundle.js",
-    "start": "beefy example/index.jsx:bundle.js 8000 --bundler ./node_modules/.bin/browserify --cwd example --live --open -- --debug",
+    "build:lib": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "browserify": {
-    "transform": [
-      "babelify",
-      "brfs",
-      "envify"
-    ]
   },
   "repository": {
     "type": "git",
@@ -30,17 +22,12 @@
     "url": "https://github.com/xcatliu/react-ie8/issues"
   },
   "homepage": "https://github.com/xcatliu/react-ie8",
-  "dependencies": {
-    "marked": "^0.3.3",
-    "react": "^0.13.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
     "babelify": "^6.1.2",
-    "beefy": "^2.1.5",
-    "brfs": "^1.4.0",
-    "browserify": "^10.2.4",
-    "envify": "^3.4.0",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-react": "^3.12.0"
