@@ -14,6 +14,7 @@ const exampleDirs = fs.readdirSync(__dirname).filter((file) => {
 // Ordering is important here. `npm install` must come first.
 const cmdArgs = [
   { cmd: 'npm', args: ['install'] },
+  { cmd: 'npm', args: ['install', 'react-ie8@latest'] },
   { cmd: 'npm', args: ['run', 'build'] },
 ];
 
