@@ -1,6 +1,6 @@
+const Es3ifyWebpackPlugin = require('../../es3ify-webpack-plugin');
+
 module.exports = {
-  entry: './entry.js',
-  output: './bundle.js',
   debug: true,
   devtool: 'source-map',
   module: {
@@ -8,8 +8,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loaders: ['babel-loader'],
       },
     ],
   },
+  plugins: [
+    new Es3ifyWebpackPlugin(),
+  ],
 };
