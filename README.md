@@ -8,7 +8,7 @@
 
 ### CommonJS
 
-若您使用 CommonJS 风格，引入 `react-ie8` 很简单，直接在**入口文件最前面**加上以下代码即可。
+若你使用 CommonJS 风格，引入 `react-ie8` 很简单，直接在***入口文件最前面***加上以下代码即可。
 
 ```js
 require('react-ie8')(options);
@@ -38,7 +38,7 @@ require('react-ie8')(options);
 
 ### CommonJS
 
-If you are using CommonJS, It's quite easy to import react-ie8, just insert the code below **to the beginning of your entry file**.
+If you are using CommonJS, It's quite easy to import react-ie8, just insert the code below ***to the beginning of your entry file***.
 
 ```js
 require('react-ie8')(options);
