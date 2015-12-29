@@ -1,4 +1,4 @@
-[中文](#make-your-react-app-work-in-ie8)
+[中文](#cn-make-your-react-app-work-in-ie8)
 
 # Make your React app work in IE8
 
@@ -35,7 +35,7 @@ Supported options:
 [examples]: https://github.com/xcatliu/react-ie8/tree/master/examples
 
 
-<a id="make-your-react-app-work-in-ie8"></a>
+<a id="cn-make-your-react-app-work-in-ie8"></a>
 
 # 使你的 React 应用兼容 IE8
 
