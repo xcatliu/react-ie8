@@ -1,5 +1,3 @@
-const Es3ifyWebpackPlugin = require('../../es3ify-webpack-plugin');
-
 module.exports = {
   debug: true,
   devtool: 'source-map',
@@ -12,7 +10,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new Es3ifyWebpackPlugin(),
-  ],
 };
