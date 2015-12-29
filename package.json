@@ -8,9 +8,6 @@
     "build:lib": "babel src --out-dir lib",
     "build": "npm run build:lib",
     "prepublish": "npm run clean && npm run build",
-    "examples:build": "babel-node examples/buildAll.js",
-    "examples:serve-static": "ecstatic --cache=false examples",
-    "examples": "npm run examples:build && npm run examples:serve-static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,11 +27,15 @@
   "homepage": "https://github.com/xcatliu/react-ie8",
   "dependencies": {
     "console-polyfill": "^0.2.2",
+    "core-js": "^2.0.0",
     "es5-shim": "^4.4.1"
   },
   "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
     "babel-eslint": "^5.0.0-beta6",
-    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-transform-object-assign": "^6.3.13",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "babelify": "^6.1.2",
