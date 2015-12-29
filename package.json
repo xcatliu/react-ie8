@@ -1,6 +1,6 @@
 {
   "name": "react-ie8",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Make your React app work in IE8",
   "main": "lib/react-ie8.js",
   "scripts": {
