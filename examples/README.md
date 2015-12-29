@@ -5,7 +5,7 @@ A series of examples which are using `react-ie8` to make app work in IE8.
 ## Getting start
 
 ```shell
-$ cd <an-example-fold>
+$ cd <an-example-folder>
 $ npm install
 $ npm start
 ```

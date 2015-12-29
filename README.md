@@ -14,6 +14,8 @@
 require('react-ie8')(options);
 ```
 
+请查看[示例]，获取更多使用方法。
+
 ## 配置
 
 支持的配置：
@@ -26,6 +28,7 @@ require('react-ie8')(options);
 
 ## 参考
 
+- [示例][examples]
 - [React 官方对 IE8 的支持][React official support for IE8]
 
 <a id="make-your-react-app-work-in-ie8"></a>
@@ -44,6 +47,8 @@ If you are using CommonJS, It's quite easy to import react-ie8, just insert the 
 require('react-ie8')(options);
 ```
 
+For more information, please visit [examples].
+
 ## Options
 
 Supported options:
@@ -56,6 +61,8 @@ Supported options:
 
 ## Reference
 
-- [React official support for IE8][]
+- [examples]
+- [React official support for IE8]
 
 [React official support for IE8]: https://facebook.github.io/react/docs/working-with-the-browser.html#browser-support-and-polyfills
+[examples]: https://github.com/xcatliu/react-ie8/tree/master/examples
