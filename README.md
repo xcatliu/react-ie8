@@ -1,4 +1,4 @@
-[中文 README](#make-your-react-app-work-in-ie8)
+[中文](#make-your-react-app-work-in-ie8)
 
 # Make your React app work in IE8
 
@@ -8,7 +8,7 @@
 
 ### CommonJS
 
-If you are using CommonJS style, It's quite easy to import react-ie8, just insert the code below ***to the beginning of your entry file***.
+If you are using CommonJS style, It's quite easy to import `react-ie8`, just insert the code below ***to the beginning of your entry file***.
 
 ```js
 require('react-ie8')(options);
