@@ -39,7 +39,6 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "babelify": "^6.1.2",
-    "es3ify": "^0.1.4",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-react": "^3.12.0",
