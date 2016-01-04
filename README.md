@@ -20,7 +20,7 @@ If you are using CommonJS style, It's quite easy to import `react-ie8`, just ins
 require('react-ie8');
 ```
 
-If fact it equals to:
+In fact it equals to:
 
 ```js
 require('es5-shim');
