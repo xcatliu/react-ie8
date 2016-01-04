@@ -31,6 +31,8 @@ Option | Possible Values | Default Value | Remark
 es5-shim | boolean | true | [github][es5-shim]
 es5-sham | boolean | true | [github][es5-sham]
 console-polyfill | boolean | true | [github][console-polyfill]
+es6-promise | boolean | false | [github][es6-promise]
+fetch-ie8 | boolean | false | [github][fetch-ie8]
 
 ## Reference
 
@@ -71,6 +73,8 @@ require('react-ie8')(options);
 es5-shim | boolean | true | [github][es5-shim]
 es5-sham | boolean | true | [github][es5-sham]
 console-polyfill | boolean | true | [github][console-polyfill]
+es6-promise | boolean | false | [github][es6-promise]
+fetch-ie8 | boolean | false | [github][fetch-ie8]
 
 ## 参考
 
@@ -83,3 +87,5 @@ console-polyfill | boolean | true | [github][console-polyfill]
 [es5-shim]: https://github.com/es-shims/es5-shim
 [es5-sham]: https://github.com/es-shims/es5-shim#shams
 [console-polyfill]: https://github.com/paulmillr/console-polyfill
+[es6-promise]: https://github.com/jakearchibald/es6-promise
+[fetch-ie8]: https://github.com/camsong/fetch-ie8
