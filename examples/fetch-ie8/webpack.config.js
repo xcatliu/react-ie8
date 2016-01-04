@@ -1,4 +1,6 @@
 module.exports = {
+  entry: './entry.js',
+  output: 'bundle.js',
   debug: true,
   devtool: 'source-map',
   module: {

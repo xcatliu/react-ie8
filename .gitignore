@@ -1,5 +1,6 @@
 *.log
 node_modules
+.DS_Store
 
 lib
 examples/**/bundle.js*
