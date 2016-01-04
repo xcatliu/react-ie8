@@ -6,8 +6,7 @@
  */
 
 require('react-ie8');
-require('es6-promise');
-require('fetch-ie8');
+require('core-js/fn/object/assign');
 
 /**
  * CANNOT use `import` to import `react` or `react-dom`,
@@ -18,9 +17,16 @@ require('fetch-ie8');
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const App = require('./App');
+
+const oldData = {
+  hello: 'World',
+};
+
+const newData = Object.assign({}, oldData, {
+  hello: 'New World',
+});
 
 ReactDOM.render(
-  <App/>,
+  <h1>{newData.hello}</h1>,
   document.getElementById('app')
 );
