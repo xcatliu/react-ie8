@@ -34,7 +34,7 @@ See [React IE8 Hello World Example].
 
 Error Message | Solution | Related Issue | Example
 ------------- | -------- | ------------- | -------
-`Expected identifier` | Use [es3ify] or [es3ify-loader] | #1 | [React IE8 Fetch IE8 Example]
+`Expected identifier` | Use [es3ify] or [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
 
 ## Troubleshooting
 
@@ -88,7 +88,7 @@ require('console-polyfill');
 
 错误信息 | 解决方案 | 相关 Issue | 示例
 -------- | -------- | ---------- | ----
-`Expected identifier` | 使用 [es3ify] 或者 [es3ify-loader] | #1 | [React IE8 Fetch IE8 Example]
+`Expected identifier` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
 
 ## Troubleshooting
 
@@ -119,3 +119,5 @@ require('console-polyfill');
 [es3ify-loader]: https://github.com/sorrycc/es3ify-loader
 [React IE8 Hello World Example]: https://github.com/xcatliu/react-ie8/tree/master/examples/hello-world
 [React IE8 Fetch IE8 Example]: https://github.com/xcatliu/react-ie8/tree/master/examples/fetch-ie8
+
+[#1]: https://github.com/xcatliu/react-ie8/issues/1
