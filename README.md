@@ -4,7 +4,7 @@
 
 > I have realized that it's foolish to include all possible requirements in one package, because once them bundled into one js file, all required files will be included, although some may not useful.
 >
-> So package `react-ie8` ***will be deprecated***.
+> So [package `react-ie8`][package react-ie8] ***will be deprecated***.
 >
 > On the other hand, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatibility problems, as will as collecting issues.
 >
@@ -32,9 +32,13 @@ See [React IE8 Hello World Example].
 
 ### Other Problems
 
+Some problems are not actually the `React`'s problem, but I also list them below:
+
 Error Message | Solution | Related Issue | Example
 ------------- | -------- | ------------- | -------
 `Expected identifier` | Use [es3ify] or [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
+
+If you have other problems, please [Open an issue].
 
 ## Troubleshooting
 
@@ -58,11 +62,11 @@ Error Message | Solution | Related Issue | Example
 
 > 我意识到把所有可能需要的依赖都引入是一种很愚蠢的行为，因为一旦他们被 bundle 到一个 js 文件中，所有的依赖都被引入了，尽管有些没有用上。
 >
-> 所以模块 `react-ie8` ***将会被废弃***.
+> 所以[模块 `react-ie8`][package react-ie8] ***将会被废弃***。
 >
 > 另一方面，`react-ie8` 将把重心移入提供一系列的[示例][Examples]和收集 issues，以便于给遇到兼容性问题的人一个参考。
 >
-> 快去查看 `react-ie8` [示例][Examples]吧，也可以[提交你遇到的问题][Open an issue].
+> 快去查看 `react-ie8` [示例][Examples]吧，也欢迎[提交 issue][Open an issue]。
 
 ## 用法
 
@@ -84,11 +88,15 @@ require('console-polyfill');
 
 参考：[React IE8 Hello World Example]。
 
-### Other Problems
+### 其他问题
+
+一些问题其实并不是 `React` 的问题，不过我也把他们列出来了：
 
 错误信息 | 解决方案 | 相关 Issue | 示例
 -------- | -------- | ---------- | ----
 `Expected identifier` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
+
+如果你遇到了其他问题，可以[提交一个 issue][Open an issue]。
 
 ## Troubleshooting
 
@@ -106,6 +114,7 @@ require('console-polyfill');
 - [fetch-ie8]
 
 
+[package react-ie8]: https://www.npmjs.com/package/react-ie8
 [React official support for IE8]: https://facebook.github.io/react/docs/working-with-the-browser.html#browser-support-and-polyfills
 [Examples]: https://github.com/xcatliu/react-ie8/tree/master/examples
 [Troubleshooting]: https://github.com/xcatliu/react-ie8/issues?utf8=%E2%9C%93&q=label%3Atroubleshooting
