@@ -6,7 +6,7 @@
 >
 > So [package `react-ie8`][package react-ie8] ***will be deprecated***.
 >
-> However, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatible problems, as will as collecting issues.
+> In addition, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatible problems, as will as collecting issues.
 >
 > Have fun with `react-ie8` [Examples], and feel free to [Open an issue].
 
