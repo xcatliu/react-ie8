@@ -41,6 +41,7 @@ Error Message | Reason | Solution | Related Issue | Example
 `Object expected` | Perhaps you are using `fetch` without polyfilled | Use `es6-promise` and `fetch-ie8` to polyfill `fetch` | [#4] | [Fetch IE8]
 `'Promise' is undefined` | `Promise` need to be polyfilled in IE8 | Use `es6-promise` to polyfill `Promise` | [#5] | [Fetch IE8]
 `Object doesn't support this property or method` | Perhaps you are using `Object.assign` | Use `core-js` to polyfill | [#7] | [Object Assign]
+`'JSON' is undefined` | Need to use IE8 Standards Mode | Add `<!DOCTYPE html>` and `<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>` | [#8] | [Hello World]
 
 If you have other problems, please [Open an issue].
 
@@ -103,6 +104,7 @@ require('console-polyfill');
 `Object expected` | 可能你使用了 `fetch` | 用 `es6-promise` 和 `fetch-ie8` polyfill | [#4] | [Fetch IE8]
 `'Promise' is undefined` | `Promise` 需要 polyfill | 用 `es6-promise` polyfill | [#5] | [Fetch IE8]
 `Object doesn't support this property or method` | 可能你使用了 `Object.assign` | 用 `core-js` polyfill | [#7] | [Object Assign]
+`'JSON' is undefined` | 需要使用 IE8 Standards Mode | 添加 `<!DOCTYPE html>` 和 `<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>` | [#8] | [Hello World]
 
 如果你遇到了其他问题，可以[提交一个 issue][Open an issue]。
 
@@ -143,3 +145,4 @@ require('console-polyfill');
 [#4]: https://github.com/xcatliu/react-ie8/issues/4
 [#5]: https://github.com/xcatliu/react-ie8/issues/5
 [#7]: https://github.com/xcatliu/react-ie8/issues/7
+[#8]: https://github.com/xcatliu/react-ie8/issues/8
