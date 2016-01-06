@@ -20,7 +20,7 @@ First install these packages:
 npm install --save es5-shim console-polyfill
 ```
 
-Then insert the code below *to the beginning of your entry file*:
+Then insert the code *into the beginning of your entry file*:
 
 ```js
 require('es5-shim');
@@ -32,12 +32,12 @@ See [React IE8 Hello World Example].
 
 ### Other Problems
 
-Some problems are not actually the `React`'s problem, but I also list them below:
+Some problems are actually not the problem of `React`, but I also list them below:
 
 Error Message | Reason | Solution | Related Issue | Example
 ------------- | ------ | -------- | ------------- | -------
-`Expected identifier` | Reserved words such as `default` used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [React IE8 Fetch IE8 Example]
-`Exception thrown and not caught` | babel transform your `import` to `Object.defineProperty` which doesn't exists in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `import` in your entry file | [#2] | [React IE8 Hello World Example]
+`Expected identifier` | Reserved words such as `default` are used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [React IE8 Fetch IE8 Example]
+`Exception thrown and not caught` | Babel transforms your `import` to `Object.defineProperty` which doesn't exist in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `import` in your entry file | [#2] | [React IE8 Hello World Example]
 
 If you have other problems, please [Open an issue].
 
