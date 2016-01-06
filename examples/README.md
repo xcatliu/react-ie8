@@ -1,6 +1,6 @@
 # React IE8 examples
 
-A series of examples which are using `react-ie8` to make app work in IE8.
+A series of examples which works in IE8.
 
 ## Getting start
 

@@ -4,7 +4,7 @@
   "description": "React IE8 Fetch IE8 Example",
   "main": "entry.js",
   "scripts": {
-    "start": "npm i ../.. && webpack-dev-server",
+    "start": "webpack-dev-server --host=0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/xcatliu/react-ie8/examples",
   "dependencies": {
+    "console-polyfill": "^0.2.2",
+    "es5-shim": "^4.4.1",
     "es6-promise": "^3.0.2",
     "fetch-ie8": "^1.4.0",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-ie8": "latest"
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {
     "babel-loader": "^6.2.0",
