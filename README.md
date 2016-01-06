@@ -2,11 +2,11 @@
 
 # Make your React app work in IE8
 
-> I have realized that it was foolish to include all possible requirements in one package, because once them bundled into one js file, all required files will be included, although some may not useful.
+> I have realized that it was foolish to include all possible requirements in one package, because once they are bundled into one js file, all required files will be included, although some may not be useful.
 >
 > So [package `react-ie8`][package react-ie8] ***will be deprecated***.
 >
-> On the other hand, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatibility problems, as will as collecting issues.
+> However, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatibility problems, as will as collecting issues.
 >
 > Have fun with `react-ie8` [Examples], and feel free to [Open an issue].
 
