@@ -36,8 +36,11 @@ Some problems are actually not the problem of `React`, but I also list them belo
 
 Error Message | Reason | Solution | Related Issue | Example
 ------------- | ------ | -------- | ------------- | -------
-`Expected identifier` | Reserved words such as `default` are used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [React IE8 Fetch IE8 Example]
-`Exception thrown and not caught` | Babel transforms your `import` to `Object.defineProperty` which doesn't exist in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `import` in your entry file | [#2] | [React IE8 Hello World Example]
+`Expected identifier` | Reserved words such as `default` are used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [Fetch IE8]
+`Exception thrown and not caught` | Babel transforms your `import` to `Object.defineProperty` which doesn't exist in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `import` in your entry file | [#2] | [Hello World]
+`Object expected` | Perhaps you are using `fetch` without polyfilled | Use `es6-promise` and `fetch-ie8` to polyfill `fetch` | [#4] | [Fetch IE8]
+`'Promise' is undefined` | `Promise` need to be polyfilled in IE8 | Use `es6-promise` to polyfill `Promise` | [#5] | [Fetch IE8]
+`Object doesn't support this property or method` | Perhaps you are using `Object.assign` | Use `core-js` to polyfill | [#7] | [Object Assign]
 
 If you have other problems, please [Open an issue].
 
@@ -95,8 +98,11 @@ require('console-polyfill');
 
 错误信息 | 原因 | 解决方案 | 相关 Issue | 示例
 -------- | ---- | -------- | ---------- | ----
-`Expected identifier` | 代码中或者第三方模块中使用了保留字，比如 `default` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
-`Exception thrown and not caught` | babel 把 `import` 编译成了 `Object.defineProperty`，而 IE8 中没有这个方法 | 把 `require('es5-shim')` `require('es5-shim/es5-sham')` 插入到入口文件的最上方，并且在入口文件中不能使用 `import` | [#2] | [React IE8 Hello World Example]
+`Expected identifier` | 代码中或者第三方模块中使用了保留字，比如 `default` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [Fetch IE8]
+`Exception thrown and not caught` | babel 把 `import` 编译成了 `Object.defineProperty`，而 IE8 中没有这个方法 | 把 `require('es5-shim')` `require('es5-shim/es5-sham')` 插入到入口文件的最上方，并且在入口文件中不能使用 `import` | [#2] | [Hello World]
+`Object expected` | 可能你使用了 `fetch` | 用 `es6-promise` 和 `fetch-ie8` polyfill | [#4] | [Fetch IE8]
+`'Promise' is undefined` | `Promise` 需要 polyfill | 用 `es6-promise` polyfill | [#5] | [Fetch IE8]
+`Object doesn't support this property or method` | 可能你使用了 `Object.assign` | 用 `core-js` polyfill | [#7] | [Object Assign]
 
 如果你遇到了其他问题，可以[提交一个 issue][Open an issue]。
 
@@ -128,8 +134,12 @@ require('console-polyfill');
 [fetch-ie8]: https://github.com/camsong/fetch-ie8
 [es3ify]: https://www.npmjs.com/package/es3ify
 [es3ify-loader]: https://github.com/sorrycc/es3ify-loader
-[React IE8 Hello World Example]: https://github.com/xcatliu/react-ie8/tree/master/examples/hello-world
-[React IE8 Fetch IE8 Example]: https://github.com/xcatliu/react-ie8/tree/master/examples/fetch-ie8
+[Hello World]: https://github.com/xcatliu/react-ie8/tree/master/examples/hello-world
+[Fetch IE8]: https://github.com/xcatliu/react-ie8/tree/master/examples/fetch-ie8
+[Object Assign]: https://github.com/xcatliu/react-ie8/tree/master/examples/object-assign
 
 [#1]: https://github.com/xcatliu/react-ie8/issues/1
 [#2]: https://github.com/xcatliu/react-ie8/issues/2
+[#4]: https://github.com/xcatliu/react-ie8/issues/4
+[#5]: https://github.com/xcatliu/react-ie8/issues/5
+[#7]: https://github.com/xcatliu/react-ie8/issues/7
