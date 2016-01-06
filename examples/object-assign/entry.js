@@ -1,8 +1,8 @@
 /**
- * CANNOT use `import` to import `react-ie8`,
+ * CANNOT use `import` to import `es5-shim`,
  * because `import` will be transformed to `Object.defineProperty` by babel,
  * `Object.defineProperty` doesn't exists in IE8,
- * (but will be polyfilled after `require('react-ie8')` executed).
+ * (but will be polyfilled after `require('es5-shim')` executed).
  */
 
 require('react-ie8');

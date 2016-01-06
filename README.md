@@ -34,9 +34,10 @@ See [React IE8 Hello World Example].
 
 Some problems are not actually the `React`'s problem, but I also list them below:
 
-Error Message | Solution | Related Issue | Example
-------------- | -------- | ------------- | -------
-`Expected identifier` | Use [es3ify] or [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
+Error Message | Reason | Solution | Related Issue | Example
+------------- | ------ | -------- | ------------- | -------
+`Expected identifier` | Reserved words such as `default` used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [React IE8 Fetch IE8 Example]
+`Exception thrown and not caught` | babel transform your `import` to `Object.defineProperty` which doesn't exists in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `import` in your entry file | [#2] | [React IE8 Hello World Example]
 
 If you have other problems, please [Open an issue].
 
@@ -92,9 +93,10 @@ require('console-polyfill');
 
 一些问题其实并不是 `React` 的问题，不过我也把他们列出来了：
 
-错误信息 | 解决方案 | 相关 Issue | 示例
--------- | -------- | ---------- | ----
-`Expected identifier` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
+错误信息 | 原因 | 解决方案 | 相关 Issue | 示例
+-------- | ---- | -------- | ---------- | ----
+`Expected identifier` | 代码中或者第三方模块中使用了保留字，比如 `default` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [React IE8 Fetch IE8 Example]
+`Exception thrown and not caught` | babel 把 `import` 编译成了 `Object.defineProperty`，而 IE8 中没有这个方法 | 把 `require('es5-shim')` `require('es5-shim/es5-sham')` 插入到入口文件的最上方，并且在入口文件中不能使用 `import` | [#2] | [React IE8 Hello World Example]
 
 如果你遇到了其他问题，可以[提交一个 issue][Open an issue]。
 
@@ -130,3 +132,4 @@ require('console-polyfill');
 [React IE8 Fetch IE8 Example]: https://github.com/xcatliu/react-ie8/tree/master/examples/fetch-ie8
 
 [#1]: https://github.com/xcatliu/react-ie8/issues/1
+[#2]: https://github.com/xcatliu/react-ie8/issues/2
