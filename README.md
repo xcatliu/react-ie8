@@ -69,7 +69,7 @@ If you have other problems, please [Open an issue].
 
 # 使你的 React 应用兼容 IE8
 
-> 一个令人失望的消息：[从 React v15 开始，React DOM 将不会再支持 IE8 了][Discontinuing IE 8 Support in React DOM]。而[中国还有超过 18% 的人在使用 IE8][IE8-in-China].
+> 一个令人失望的消息：[从 React v15 开始，React DOM 将不会再支持 IE8 了][Discontinuing IE 8 Support in React DOM]。而[中国还有超过 18% 的人在使用 IE8][IE8-in-China]。
 >
 > 无论如何，`react-ie8` 仍会提供一系列的[示例][Examples]，还会收集 issues，以便于给遇到兼容性问题的人一个参考。
 >
