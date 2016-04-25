@@ -8,13 +8,9 @@
 >
 > Have fun with `react-ie8` [Examples], and feel free to [Open an issue].
 
-## How to support IE8
+## How to
 
-<<<<<<< Updated upstream
-First you shouldn't use React v15 or any higher version. Just use React v0.14 which still support IE8.
-=======
 First you shouldn't use React v15 or higher version anymore. Just use React v0.14 which still support IE8.
->>>>>>> Stashed changes
 
 If you need docs for React v0.14, go to http://react-ie8.xcatliu.com
 
@@ -36,11 +32,7 @@ require('es5-shim/es5-sham');
 require('console-polyfill');
 ```
 
-<<<<<<< Updated upstream
-See [React IE8 Hello World Example] for a real example.
-=======
 See [React IE8 Hello World Example][Hello World] for a real example.
->>>>>>> Stashed changes
 
 ### Other Problems
 
@@ -107,11 +99,7 @@ require('es5-shim/es5-sham');
 require('console-polyfill');
 ```
 
-<<<<<<< Updated upstream
-参考：[React IE8 Hello World Example]。
-=======
 参考一个真实的例子：[React IE8 Hello World Example][Hello World]。
->>>>>>> Stashed changes
 
 ### 其他问题
 
