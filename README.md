@@ -2,15 +2,19 @@
 
 # Make your React app work in IE8
 
-> I have realized that it was foolish to include all possible requirements in one package, because once they are bundled into one js file, all required files will be included, although some may not be useful.
+> It's really a dispiriting news that [Starting with React v15, we're discontinuing React DOM's support for IE 8][Discontinuing IE 8 Support in React DOM]. There are still [more than 18% people who are using IE8 in China][IE8-in-China].
 >
-> So [package `react-ie8`][package react-ie8] ***will be deprecated***.
->
-> In addition, `react-ie8` will focus on providing a series of [Examples] for people who are facing the same compatible problems, as will as collecting issues.
+> Anyway, `react-ie8` will continuously provide a series of [Examples] for people who are facing the same compatible problems, as will as collecting issues.
 >
 > Have fun with `react-ie8` [Examples], and feel free to [Open an issue].
 
-## Usage
+## How to support IE8
+
+First you shouldn't use React v15 or any higher version. Just use React v0.14 which still support IE8.
+
+If you need docs for React v0.14, go to http://react-ie8.xcatliu.com
+
+### Using CommonJS
 
 I highly recommend to use CommonJS style to include required packages.
 
@@ -28,7 +32,7 @@ require('es5-shim/es5-sham');
 require('console-polyfill');
 ```
 
-See [React IE8 Hello World Example].
+See [React IE8 Hello World Example] for a real example.
 
 ### Other Problems
 
@@ -65,15 +69,19 @@ If you have other problems, please [Open an issue].
 
 # 使你的 React 应用兼容 IE8
 
-> 我意识到把所有可能需要的依赖都引入是一种很愚蠢的行为，因为一旦他们被 bundle 到一个 js 文件中，所有的依赖都被引入了，尽管有些没有用上。
+> 一个令人失望的消息：[从 React v15 开始，React DOM 将不会再支持 IE8 了][Discontinuing IE 8 Support in React DOM]。而[中国还有超过 18% 的人在使用 IE8][IE8-in-China].
 >
-> 所以[模块 `react-ie8`][package react-ie8] ***将会被废弃***。
->
-> 另一方面，`react-ie8` 将把重心移入提供一系列的[示例][Examples]和收集 issues，以便于给遇到兼容性问题的人一个参考。
+> 无论如何，`react-ie8` 仍会提供一系列的[示例][Examples]，还会收集 issues，以便于给遇到兼容性问题的人一个参考。
 >
 > 快去查看 `react-ie8` [示例][Examples]吧，也欢迎[提交 issue][Open an issue]。
 
-## 用法
+## 如何兼容 IE8
+
+首先，你不应该使用 React v15 或更高版本。使用仍然支持 IE8 的 React v0.14 即可。
+
+如果你需要查看 React v0.14 的文档，请访问：http://react-ie8.xcatliu.com
+
+### 使用 CommonJS
 
 强烈推荐使用 CommonJS 风格来引入需要的模块。
 
@@ -123,8 +131,8 @@ require('console-polyfill');
 - [es6-promise]
 - [fetch-ie8]
 
-
-[package react-ie8]: https://www.npmjs.com/package/react-ie8
+[Discontinuing IE 8 Support in React DOM]: https://facebook.github.io/react/blog/2016/01/12/discontinuing-ie8-support.html
+[IE8-in-China]: http://tongji.baidu.com/data/browser
 [React official support for IE8]: https://facebook.github.io/react/docs/working-with-the-browser.html#browser-support-and-polyfills
 [Examples]: https://github.com/xcatliu/react-ie8/tree/master/examples
 [Troubleshooting]: https://github.com/xcatliu/react-ie8/issues?utf8=%E2%9C%93&q=label%3Atroubleshooting
