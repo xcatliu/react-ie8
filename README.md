@@ -4,7 +4,7 @@
 
 > It's really a dispiriting news that [Starting with React v15, we're discontinuing React DOM's support for IE 8][Discontinuing IE 8 Support in React DOM]. There are still [more than 18% people who are using IE8 in China][IE8-in-China].
 >
-> Anyway, `react-ie8` will continuously provide a series of [Examples] for people who are facing the same compatible problems, as will as collecting issues.
+> Anyway, `react-ie8` will continuously provide a series of [Examples] for people who are facing the same compatible problems, as well as collecting issues.
 >
 > Have fun with `react-ie8` [Examples], and feel free to [Open an issue].
 
