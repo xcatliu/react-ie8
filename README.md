@@ -41,7 +41,7 @@ Some problems are actually not the problem of `React`, but I also list them belo
 Error Message | Reason | Solution | Related Issue | Example
 ------------- | ------ | -------- | ------------- | -------
 `Expected identifier` | Reserved words such as `default` are used in your code or in third party packages | Use [es3ify] or [es3ify-loader] to transform your code | [#1] | [Fetch IE8]
-`Exception thrown and not caught` | Babel transforms your `export * from 'xxx'` to `Object.defineProperty` which doesn't support accessor property in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `export * from 'xxx'` in your code | [#2] [#32] | [Hello World]
+`Exception thrown and not caught` | Babel transforms your `export * from 'xxx'` to `Object.defineProperty` which doesn't support accessor property in IE8 | Insert `require('es5-shim')` `require('es5-shim/es5-sham')` in the top of your entry file, and DONOT use `export * from 'xxx'` in your code | [#2][#2] [#32][#32] | [Hello World]
 `Object expected` | Perhaps you are using `fetch` without polyfilled | Use `es6-promise` and `fetch-ie8` to polyfill `fetch` | [#4] | [Fetch IE8]
 `'Promise' is undefined` | `Promise` need to be polyfilled in IE8 | Use `es6-promise` to polyfill `Promise` | [#5] | [Fetch IE8]
 `Object doesn't support this property or method` | Perhaps you are using `Object.assign` | Use `core-js` to polyfill | [#7] | [Object Assign]
@@ -108,7 +108,7 @@ require('console-polyfill');
 错误信息 | 原因 | 解决方案 | 相关 Issue | 示例
 -------- | ---- | -------- | ---------- | ----
 `Expected identifier` | 代码中或者第三方模块中使用了保留字，比如 `default` | 使用 [es3ify] 或者 [es3ify-loader] | [#1] | [Fetch IE8]
-`Exception thrown and not caught` | babel 把 `export * from 'xxx'` 编译成了 `Object.defineProperty`，而 IE8 中不支持 accessor property | 把 `require('es5-shim')` `require('es5-shim/es5-sham')` 插入到入口文件的最上方，并且在代码中不要使用 `export * from 'xxx'` | [#2] [#32] | [Hello World]
+`Exception thrown and not caught` | babel 把 `export * from 'xxx'` 编译成了 `Object.defineProperty`，而 IE8 中不支持 accessor property | 把 `require('es5-shim')` `require('es5-shim/es5-sham')` 插入到入口文件的最上方，并且在代码中不要使用 `export * from 'xxx'` | [#2][#2] [#32][#32] | [Hello World]
 `Object expected` | 可能你使用了 `fetch` | 用 `es6-promise` 和 `fetch-ie8` polyfill | [#4] | [Fetch IE8]
 `'Promise' is undefined` | `Promise` 需要 polyfill | 用 `es6-promise` polyfill | [#5] | [Fetch IE8]
 `Object doesn't support this property or method` | 可能你使用了 `Object.assign` | 用 `core-js` polyfill | [#7] | [Object Assign]
