@@ -75,6 +75,8 @@ If you have other problems, please [Open an issue].
 >
 > 快去查看 `react-ie8` [示例][Examples]吧，也欢迎[提交 issue][Open an issue]。
 
+> 可以使用支持 IE8 的 Boilerplate 项目，请访问：https://github.com/jun0205/react-static-boilerplate
+
 ## 如何兼容 IE8
 
 首先，你不应该使用 React v15 或更高版本。使用仍然支持 IE8 的 React v0.14 即可。
