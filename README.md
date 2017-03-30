@@ -34,6 +34,10 @@ require('console-polyfill');
 
 See [React IE8 Hello World Example][Hello World] for a real example.
 
+### React Static Boilerplate
+
+[React Static Boilerplate](https://github.com/jun0205/react-static-boilerplate) A React static boilerplate that supports IE8，To view [Demo](http://react-ie8.getfuli.com/)
+
 ### Other Problems
 
 Some problems are actually not the problem of `React`, but I also list them below:
@@ -100,6 +104,10 @@ require('console-polyfill');
 ```
 
 参考一个真实的例子：[React IE8 Hello World Example][Hello World]。
+
+### 使用 React Static Boilerplate
+
+[React Static Boilerplate](https://github.com/jun0205/react-static-boilerplate) 一个创建好的支持 IE8 的 React 静态模板，可以查看[演示](http://react-ie8.getfuli.com/)
 
 ### 其他问题
 
