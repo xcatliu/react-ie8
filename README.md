@@ -34,6 +34,10 @@ require('console-polyfill');
 
 See [React IE8 Hello World Example][Hello World] for a real example.
 
+### React Static Boilerplate
+
+[React Static Boilerplate](https://github.com/jun0205/react-static-boilerplate) A React static boilerplate that supports IE8，To view [Demo](http://react-ie8.getfuli.com/)
+
 ### Other Problems
 
 Some problems are actually not the problem of `React`, but I also list them below:
@@ -75,8 +79,6 @@ If you have other problems, please [Open an issue].
 >
 > 快去查看 `react-ie8` [示例][Examples]吧，也欢迎[提交 issue][Open an issue]。
 
-> 可以使用支持 IE8 的 Boilerplate 项目，请访问：https://github.com/jun0205/react-static-boilerplate
-
 ## 如何兼容 IE8
 
 首先，你不应该使用 React v15 或更高版本。使用仍然支持 IE8 的 React v0.14 即可。
@@ -102,6 +104,10 @@ require('console-polyfill');
 ```
 
 参考一个真实的例子：[React IE8 Hello World Example][Hello World]。
+
+### 使用 React Static Boilerplate
+
+[React Static Boilerplate](https://github.com/jun0205/react-static-boilerplate) 一个创建好的支持 IE8 的 React 静态模板，可以查看[演示](http://react-ie8.getfuli.com/)
 
 ### 其他问题
 
