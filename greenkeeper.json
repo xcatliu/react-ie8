@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/fetch-ie8/package.json",
+        "examples/hello-world/package.json",
+        "examples/object-assign/package.json"
+      ]
+    }
+  }
+}
